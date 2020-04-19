@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    /* direction: rtl; */
+}
+
+@font-face {
+    font-family: porieton;
+    src: url(../fonts/porietone/PoiretOne-Regular.ttf);
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+nav h1 {
+    font-size: 40px;
+    font-family: porietone;
+    color: #ffffff;
+    display: flex;
+    align-self: center;
+    font-family: porieton;
+    cursor: pointer;
+    margin: auto;
+}
+
+.miro {
+    color: rgba(218, 165, 32, 0.979);
+}
+
+nav img {
+    width: 100px;
+    display: inline-block;
+}
