@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: porieton;
+    src: url(../fonts/porietone/PoiretOne-Regular.ttf);
+}
+@font-face {
+    font-family: amatic-bold;
+    src: url(../fonts/amasticSc/AmaticSC-Bold.ttf);
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
