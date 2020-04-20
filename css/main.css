@@ -1,62 +1,61 @@
 @import url("helpers.css");
-body{
+.top-page {
+    height: 100%;
+    width: 100%;
+    left: 0;
     user-select: none;
     background-image: url("../imgs/BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /** MOUUDLE **/
-.screen{
-    z-index: 1;
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.956);
-    visibility: hidden;
-}
-.moudle{
+
+.moudle {
     max-width: 640px;
     position: absolute;
-    z-index:3;
-    top:25%;
-    left: 35%;
+    z-index: 3;
+    top: 25%;
+    margin-left: 40%;
+    padding: 5%;
     align-items: center;
     background-color: rgba(255, 252, 246, 0.983);
-    padding: 5%;
-    box-shadow: inset -3px -5px 4px rgba(24, 24, 24, 0.263);;
+    box-shadow: inset -3px -5px 4px rgba(24, 24, 24, 0.263);
 }
-.moudle form{
+
+.moudle form {
     align-items: center;
 }
-.colors-picker{
+
+.colors-picker {
     width: 100%;
     justify-content: center;
     margin-bottom: 5%;
 }
-.texts{
+
+.texts {
     border: none;
     text-align: center;
     margin-bottom: 5%;
     font-size: 1.4em;
     color: rgb(42, 42, 42);
     background-color: rgba(255, 252, 246, 0.983);
-    box-shadow: inset 0 -2px 3px rgba(117, 117, 117, 0.548);;
+    box-shadow: inset 0 -2px 3px rgba(117, 117, 117, 0.548);
+    ;
 }
 
-.box-color{
+.box-color {
     border: 2px solid black;
     padding: .2%;
 }
 
 /**end moudle **/
 
-
-
-.social-media{
+.social-media {
     padding: 1%;
 }
-header .social-media img {
+
+.header .social-media img {
     margin-left: .1%;
     width: 30px;
     padding: 5px;
@@ -66,62 +65,85 @@ header .social-media img {
     cursor: pointer;
 }
 
-header .social-media img:hover {
+.header .social-media img:hover {
     background-color: rgba(251, 229, 131, 0.811);
 }
-.social-media .facebook img:hover{
+
+.social-media .facebook img:hover {
     background-color: rgba(100, 142, 231, 0.811);
 }
+.social-media .instegram img:hover {
+    background-color: rgba(219, 144, 253, 0.811);
+}
+
 .main {
     justify-content: center;
 }
-.logo-container{
-    width: 100%;
+
+.logo-container {
+    width: 100vw;
     background-color: rgba(26, 25, 25, 0.748);
     padding-top: 3%;
-    top: 30%;
-    margin: auto;
+    top:25%;
     position: absolute;
     text-align: center;
 }
-.logo{
-    color: rgba(255, 255, 255, 0.876);
+
+.logo {
     display: block;
     font-family: porieton;
     font-weight: bolder;
     font-size: 14em;
     letter-spacing: -20px;
     text-transform: uppercase;
-    line-height: .72em;
+    color: rgba(228, 192, 100, 0.877);
+    text-shadow: 0px .3px 3px rgba(238, 238, 238, 0.759);
+}
+.logo::before {
+    content: 'Jaka';
+    color: rgba(255, 255, 255, 0.876);
     text-shadow: 0px .3px 3px rgba(255, 208, 0, 0.759);
 }
-.logo::after{
-    content: "miro";
-    color: rgba(228, 192, 100, 0.877);
+.logo::after {
+    display: inline-block;
+    content: 'O'; 
+    background: url(../img/logo-rot.png) no-repeat;
+    background-size: 180px;
+    background-position: 10px;
+    animation: rotateIt 3s linear infinite;
 }
-.sub-logo{
+@keyframes rotateIt {
+    0%{transform: rotate(360deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+.sub-logo {
     color: rgba(245, 206, 109, 0.637);
     display: block;
     text-transform: uppercase;
     font-size: 1.6em;
     letter-spacing: 15px;
     text-shadow: 0px .3px 1px rgb(255, 255, 255);
-
 }
-.logo-container .time{
+
+.logo-container .time {
     font-family: amatic-bold;
     font-size: 1.5em;
     color: rgb(255, 255, 255);
 }
-.actions-btn{
+
+.actions-btn {
     margin: auto;
     line-height: 8em;
 }
-.btn{
+
+.btn {
     border: none;
     cursor: pointer;
     font-size: 1.7em;
-    padding: .1%;
+    padding: .5%;
     border-radius: 15px;
     text-transform: uppercase;
     font-family: able-regular;
@@ -129,10 +151,22 @@ header .social-media img:hover {
     box-shadow: 0px .4px 5px rgba(255, 229, 113, 0.718);
     transition: background-color .6s, color .6s;
 }
-.btn:hover{
+
+.btn:hover {
     color: rgba(223, 223, 223, 0.842);
     background-color: rgba(31, 31, 31, 0.846);
 }
-.btn:not(:first-child){
+
+.btn:not(:first-child) {
     margin-left: 3%;
+}
+footer{
+    margin-top: 90vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.133);
+}
+footer  div{
+    text-align: center;
+    font-family: amatic-bold;
+    color: rgba(255, 255, 255, 0.679);
 }
