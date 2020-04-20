@@ -1,27 +1,29 @@
 'use strict';
 const selectColor = document.querySelector('.colors');
-window.addEventListener('load',eventlistners)
+window.addEventListener('load', eventlistners)
 
-function eventlistners(){
-    document.querySelector('.gallery-btn').addEventListener('click',goToGallery);
-    selectColor.addEventListener('change',onChangeColor);
+function eventlistners() {
+    renderForm();
+    document.querySelector('.gallery-btn').addEventListener('click', goToGallery);
+    selectColor.addEventListener('change', onChangeColor);
 }
 
-function goToGallery(){
+function goToGallery() {
     document.location.href = 'gallery.html';
 }
-function renderForm(){
+function renderForm() {
     renderColors();
 }
-function renderColors(){
+function renderColors() {
     const colors = getColors();
-    var strHtmls='';
-    colors.forEach(color=>{
-        strHtmls +=`<option value=${color.code}>${color.name}</option>`
+    var strHtmls = '';
+    colors.forEach(color => {
+        strHtmls += `<option value=${color.code}>${color.name}</option>`
     })
     selectColor.innerHTML = strHtmls;
 }
 
-function onChangeColor(){
-    
+function onChangeColor(ev) {
+    const color = ev.target.value;
+    document.querySelector('.box-color').style.backgroundColor = color;
 }

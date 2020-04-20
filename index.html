@@ -9,7 +9,21 @@
 </head>
 
 <body>
-    <!-- <div class="screen"></div> -->
+    <section class="moudle">
+        <form class="flex col">
+            <input class="fname texts" placeholder="Enter your Name">
+            <input type="email" class="email texts" placeholder="Enter your Email">
+            <input class="phone texts" placeholder="Enter your phone number">
+            <textarea type="text" class="desc texts">Enter Description</textarea>
+            <div class="colors-picker flex">
+                <select class="colors">
+                </select>
+                <span class="box-color">Selected color</span>
+            </div>
+            <input type="file" class="up-img">
+        </form>
+    </section>
+    <div class="screen"></div>
     <header>
         <section class="social-media">
             <span class="location"><img src="./imgs/icons/pin.png"></span>
@@ -28,15 +42,6 @@
                 <button class="btn">Contact</button>
             </div>
         </div>
-    </section>
-    <section class="moudle">
-        <form>
-            <input class="fname" placeholder="Enter your Name">
-            <input type="phone" class="phone" placeholder="Enter your phone number">
-            <select class="colors">
-            </select>
-            <span class="box-color">Selected color</span>
-        </form>
     </section>
     <script src="js/services.js"></script>
     <script src="js/main.js"></script>
