@@ -1,8 +1,8 @@
 'use strict';
 var gColors = [
     {
-        name: 'Gold',
-        code: '#ffcc00'
+        name: 'Other',
+        code: undefined
     },
     {
         name: 'Silver',
@@ -13,12 +13,12 @@ var gColors = [
         code: '#000000'
     },
     {
-        name: 'White',
-        code: '#ffffff'
+        name: 'Gold',
+        code: '#ffcc00'
     },
     {
-        name: 'Other',
-        code: undefined
+        name: 'White',
+        code: '#ffffff'
     },
 ];
 

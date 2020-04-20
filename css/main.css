@@ -52,7 +52,7 @@ body {
 
 .logo-container {
     width: 100vw;
-    background-color: rgba(26, 25, 25, 0.708);
+    background-color: rgba(26, 25, 25, 0.608);
     padding-top: 3%;
     top: 15%;
     position: absolute;
@@ -77,8 +77,8 @@ body {
 
 .logo-o {
     background: url(../img/logo-rot.png) no-repeat;
-    background-size: 180px;
-    background-position: 40px;
+    background-size: 150px;
+    background-position: 60px;
     transform: rotate(40deg);
 }
 
@@ -208,7 +208,10 @@ body {
 
 footer {
     background-color: rgba(0, 0, 0, 0.133);
-    justify-content: center;
+}
+footer span{
+    justify-content: space-between;
+    margin: auto;
 }
 
 footer div {

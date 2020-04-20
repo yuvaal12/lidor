@@ -14,13 +14,16 @@
             <section class="social-media">
                 <a href="#contact" class="email"><img src="./imgs/icons/email.png"></a>
                 <!-- <a href="api.whatsapp.com/send?phone=972524232230" target="_blank" class="whatsapp"><img src="./imgs/icons/whatsapp.png"></a> -->
-                <a href="https://www.facebook.com/Jakamiro-107337514199770" target="_blank" class="facebook"><img src="./imgs/icons/facebook.png"></a>
-                <a href="https://www.instagram.com/jakamiro/" target="_blank" class="instegram"><img src="./imgs/icons/instagram.png"></a>
+                <a href="https://www.facebook.com/Jakamiro-107337514199770" target="_blank" class="facebook"><img
+                        src="./imgs/icons/facebook.png"></a>
+                <a href="https://www.instagram.com/jakamiro/" target="_blank" class="instegram"><img
+                        src="./imgs/icons/instagram.png"></a>
             </section>
         </section>
         <section class="main flex">
             <div class="logo-container">
-                <span class="logo logo-before">Jaka</span><span class="logo">Mir</span><span class="logo logo-o">o</span>
+                <span class="logo logo-before">Jaka</span><span class="logo">Mir</span><span
+                    class="logo logo-o">o</span>
                 <span class="sub-logo">-Design at your command-</span>
                 <span class="time">since 1991</span>
                 <div class="actions-btn container">
@@ -32,12 +35,14 @@
         </section>
     </section>
     <section class="contact flex col">
-        <a href="#contact" class="more"><h1>🡣 More 🡣</h1></a>
+        <a href="#contact" class="more">
+            <h1>🡣 More 🡣</h1>
+        </a>
         <h2>Contact us</h2>
-        <form  id="contact" class="flex col container">
-            <input class="fname texts" placeholder="Enter your Name">
-            <input type="email" class="email texts" placeholder="Enter your Email">
-            <input class="phone texts" placeholder="Enter your phone number">
+        <form id="contact" class="flex col container">
+            <input class="fname texts" placeholder="Enter your Name" required>
+            <input type="email" class="email texts" placeholder="Enter your Email" required>
+            <input pattern="(0){1}(0-9){2}(0-9){7,7}" class="phone texts" placeholder="Enter your phone number">
             <textarea type="text" class="desc texts" placeholder="Enter More Info..."></textarea>
             <div class="colors-picker flex">
                 <select class="colors">
@@ -51,9 +56,11 @@
             </div>
         </form>
     </section>
-    <footer class="flex">
-        <div>©Bekitzer 2020</div>
-        <a class="up" href="#">TOP</a>
+    <footer>
+        <span class="flex container">
+            <div>©Bekitzer 2020</div>
+            <a class="up" href="#">TOP</a>
+        </span>
     </footer>
     <script src="js/services.js"></script>
     <script src="js/main.js"></script>
