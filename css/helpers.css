@@ -9,6 +9,10 @@
     font-family: amatic-bold;
     src: url(../fonts/amasticSc/AmaticSC-Bold.ttf);
 }
+@font-face {
+    font-family: able-regular;
+    src: url(../fonts/abel/Abel-Regular.ttf);
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -17,4 +21,7 @@ body {
 
 .flex {
     display: flex;
+}
+.container{
+    max-width: 1260px;
 }

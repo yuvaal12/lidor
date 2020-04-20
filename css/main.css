@@ -25,17 +25,23 @@ header .social-media img {
     padding: 5px;
     background-color: rgb(207, 207, 207);
     border-radius: 40%;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.466);
+    box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.466);
     cursor: pointer;
 }
 
 header .social-media img:hover {
     background-color: rgba(251, 229, 131, 0.811);
 }
+.social-media .facebook img:hover{
+    background-color: rgba(100, 142, 231, 0.811);
+}
 .main {
     justify-content: center;
 }
 .logo-container{
+    width: 100%;
+    background-color: rgba(26, 25, 25, 0.748);
+    padding-top: 3%;
     z-index: 3;
     top: 30%;
     margin: auto;
@@ -43,7 +49,7 @@ header .social-media img:hover {
     text-align: center;
 }
 .logo{
-    color: rgba(0, 0, 0, 0.926);
+    color: rgba(255, 255, 255, 0.876);
     display: block;
     font-family: porieton;
     font-weight: bolder;
@@ -51,7 +57,7 @@ header .social-media img:hover {
     letter-spacing: -20px;
     text-transform: uppercase;
     line-height: .72em;
-    text-shadow: 0px .3px 1px rgba(255, 208, 0, 0.459);
+    text-shadow: 0px .3px 3px rgba(255, 208, 0, 0.759);
 }
 .logo::after{
     content: "miro";
@@ -66,19 +72,31 @@ header .social-media img:hover {
     text-shadow: 0px .3px 1px rgb(255, 255, 255);
 
 }
-.logo-container span:last-child{
+.logo-container .time{
     font-family: amatic-bold;
-    font-size: 1.3em;
-    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
 }
 .actions-btn{
+    margin: auto;
     line-height: 8em;
 }
 .btn{
     border: none;
     cursor: pointer;
-    font-size: 2.1em;
+    font-size: 1.7em;
+    padding: .1%;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: able-regular;
+    width: 10%;
+    box-shadow: 0px .4px 5px rgba(255, 229, 113, 0.718);
+    transition: background-color .6s, color .6s;
+}
+.btn:hover{
+    color: rgba(223, 223, 223, 0.842);
+    background-color: rgba(31, 31, 31, 0.846);
 }
 .btn:not(:first-child){
-    margin-left: 15%;
+    margin-left: 3%;
 }
