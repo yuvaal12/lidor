@@ -77,8 +77,9 @@ body {
 
 .logo-o {
     background: url(../img/logo-rot.png) no-repeat;
-    background-size: 270px;
-    background-position: -35px;
+    background-size: 180px;
+    background-position: 40px;
+    transform: rotate(40deg);
 }
 
 .sub-logo {
