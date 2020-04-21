@@ -6,12 +6,12 @@
     src: url(../fonts/porietone/PoiretOne-Regular.ttf);
 }
 @font-face {
-    font-family: amatic-bold;
-    src: url(../fonts/amasticSc/AmaticSC-Bold.ttf);
+    font-family: juliusSans;
+    src: url(../fonts/JuliusSansOne/JuliusSansOne-Regular.ttf);
 }
 @font-face {
-    font-family: able-regular;
-    src: url(../fonts/abel/Abel-Regular.ttf);
+    font-family: carrotgoth;
+    src: url(../fonts/CarroisGoth/CarroisGothicSC-Regular.ttf);
 }
 body {
     width: 100vw;
